@@ -1,0 +1,14 @@
+{
+  "name": "angularjs-flux",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular.js.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.7.x",
+    "angular-route": "1.7.x",
+    "angular-resource": "1.7.x",
+    "bootstrap": "3.3.x"
+  }
+}

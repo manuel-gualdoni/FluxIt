@@ -1,0 +1,188 @@
+@font-face{font-family:Circular;
+	src:url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-book.woff2) format('woff2'),
+	url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-book.woff) format('woff');
+	font-weight:400;
+	font-style:normal
+}
+@font-face{font-family:Circular;
+	src:url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-medium.woff2) format('woff2'),
+	url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-medium.woff) format('woff');
+	font-weight:500;
+	font-style:normal
+}
+@font-face{
+	font-family:Circular;
+	src:url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-bold.woff2) format('woff2'),
+	url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-bold.woff) format('woff');
+	font-weight:700;
+	font-style:normal
+}
+@font-face{
+	font-family:Circular;
+	src:url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-black.woff2) format('woff2'),
+	url(https://sp-bootstrap.global.ssl.fastly.net/8.0.0/fonts/circular-black.woff) format('woff');
+	font-weight:900;
+	font-style:normal
+}
+
+body{
+	font: inherit;
+	font-family: Circular,Helvetica,Arial,sans-serif,bold;
+	background: #131212;
+}
+
+.navbar, .navbar-nav{
+	background: #000;
+}
+
+.navbar .navbar-brand{
+	color: #fff;
+	font-size: 26px;
+	padding-left: 8px;
+	font-weight: bold;	
+}
+
+.navbar .navbar-collapse .side-nav:hover{
+	color:red;
+}
+
+
+.navbar .navbar-header img{
+	height: 30px;
+	width: 30px;
+	margin-top: 10px;
+    float: left;
+    margin-left: 20px;
+}
+
+.navbar .collapse{
+
+	font-size: 20px;
+	font
+}
+
+.navbar .collapse .nav .glyphicon, #page-wrapper-tracks .glyphicon{
+	padding-right: 10px;
+}
+
+
+#page-wrapper, #page-wrapper-detail, #page-wrapper-tracks{
+	background: #131212;
+	color: #fff;	
+}
+
+/*template artist-list*/
+
+
+
+#page-wrapper .page-header{
+	border-bottom: none;
+}
+
+/*Bordes de tabla (titulo y contenido)*****************************************************************************************/
+
+#page-wrapper .table thead tr th {
+    border-bottom: none;
+}
+
+#page-wrapper .table tbody tr td, .table tfoot tr td{
+    border-top: none;
+}
+
+/*Bordes de tabla (titulo y contenido)*****************************************************************************************/
+
+.navbar-ex1-collapse .side-nav .active{
+	color: red;
+}
+
+.table-responsive .table thead tr th{
+	font-size: 20px;
+}
+
+.table-responsive .table tbody tr:hover{
+	background: none;
+}
+
+.table-responsive .table tbody tr, #page-wrapper-tracks ul{
+	font-size: 15px;	
+}
+
+.table-responsive .table tbody tr td ul, #page-wrapper-tracks ul{
+	list-style-type: none;	
+	padding-top: 30px;
+	list-style-position: inside;
+}
+
+.table-responsive .table tbody tr td ul li, #page-wrapper-tracks ul li{
+	padding-bottom: 8px;
+}
+
+.table-responsive .table tbody tr td ul li a, #page-wrapper-tracks ul li .artist-name{
+	color: #b5b2b2;
+}
+
+.table-responsive .table tbody tr td ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+/*template artist-detail*/
+
+#page-wrapper-detail .page-header{
+    border-bottom: none;
+}
+
+#page-wrapper-detail .header img{
+	padding-top: 10px;
+	border-radius: 50%;
+}
+
+#page-wrapper-detail h2{
+	text-align: center;
+	font-weight: bold;
+}
+
+#page-wrapper-detail h2:after {
+    content: "";
+    height: 2px;
+    background-color: #1db954;
+    width: 60px;
+    position: relative;
+    top: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+#page-wrapper-detail p{
+	margin: 5px;
+	font-size: 14px;
+	text-align: center;
+	color: #b5b2b2;
+	text-decoration: none;
+	text-decoration-style: none; 
+}
+
+#page-wrapper-detail .body h1{
+	text-align: center;
+	font-weight: bold;
+}
+
+#page-wrapper-detail .body a p{
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+/*template artist-tracks*/
+.imageCenter{
+    margin: 20% 0;
+}
+
+.imageCenter p{
+    text-align: center;
+    margin-top: 25px;
+   	color: #b5b2b2;
+   	font-size: 14px;
+}
+
+
+
+

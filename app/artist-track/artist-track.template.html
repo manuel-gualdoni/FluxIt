@@ -1,0 +1,26 @@
+ <div id="page-wrapper-tracks">
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 imageCenter">
+                         <img class="espacio-imagen center-block" ng-src="{{albums.images[1].url}}"/>
+                         <p>{{albums.name}}</p>
+                    </div>    
+                    <div class="col-lg-8 col-md-8">
+                        <ul>
+                            <li ng-repeat="track in tracks">
+                                <p><span class="glyphicon glyphicon-music"></span>{{track.name}}</p>
+                                <p class="artist-name">{{track.artists[0].name}}</p>
+                            </li>
+                        </ul>
+                    </div>           
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+
+ </div>

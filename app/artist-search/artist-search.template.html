@@ -1,0 +1,85 @@
+   <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Search by Artist
+                        </h1>
+                    </div>
+                </div>
+            <div class="row">
+                
+                <div class="col-md-offset-3 col-md-6"> 
+                    <form role="form">
+
+                        <div class="form-group has-success">
+                            <label class="control-label" for="inputSuccess">Texto</label>
+                            <input type="text" class="form-control" id="inputSuccess" ng-model="q">
+                        </div>
+                        <div class="form-group">
+                            <label>Select an option</label>
+                            <label class="radio-inline">
+                                <input ng-model="type" type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="artist" checked="">Artist
+                            </label>
+                            <label class="radio-inline">
+                                <input ng-model="type" type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="album">Albums
+                            </label>
+                        </div>
+                           <!-- <input type="text" class="form-control" id="inputWarning" ng-model="type">-->
+                        
+
+                        <div class="form-group has-error">
+                            <input type="button" class="form-control" id="inputError" value="Buscar" ng-click="buscar(q,type)">
+                        </div>
+
+                    </form>
+                    <div class="col-lg-12">
+                        <div class="table-responsive">
+                            <div ng-if="type == 'artist'">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Genres</th>
+                                            <th>Popularity</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="artist in search.artists.items">
+                                            <td>{{artist.name}}</td>
+                                            <td>{{artist.genres.toString()}}</td>
+                                            <td>{{artist.popularity}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div ng-if="type == 'album'">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Artist Name</th>
+                                            <th>Album Name</th>
+                                            <th>Type Album</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat="album in search.albums.items">
+                                            <td>{{album.artists[0].name}}</td>
+                                            <td>{{album.name}}</td>
+                                            <td>{{album.album_type}}</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>

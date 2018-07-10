@@ -1,0 +1,30 @@
+ <div id="page-wrapper-detail">
+
+    <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 header">
+                    <img class="espacio-imagen center-block" ng-src="{{artist.images[2].url}}"/>
+                    <h2 class="page-header">{{artist.name}}</h2>
+                    <p>Popularity: {{artist.popularity}}</p>
+                    <p>Folowers: {{artist.followers.total}}</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 col-md-12 body">
+                <h1>Albums</h1>
+                <div ng-repeat="album in albums" >
+                    <div ng-class="{'clearfix': $index%4 === 0}"></div>
+                    <div class="col-lg-3 col-md-3" >
+                        <a href="#!/album/{{album.id}}"><img class="espacio-imagen center-block" ng-src="{{album.images[1].url}}"></a>
+                        <a href="#!/album/{{album.id}}"><p>{{album.name}}</p></a>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+
+ </div>
