@@ -1,5 +1,5 @@
 var serviceModule = angular.module('serviceModule', ['ngResource']);
-var token = 'BQCwN_66itrjFKVlSnuVtFMivjlw5Bo0LIy_ddtTJn-AqwI58PmTNZGHvvEi83iPRvWrmAk-G5H-E9Y-AoCUX8K3VcsEslWftd_93QgwHSBgfLYe27PVjlOJwDT9LWItiC1KjzNh01kVf8c0oL0s4fjOxBAm4fjmpDxNmwcV4YunJ1sUyOXz4Y3z7i09KqMez4j3QYl7C2fzJSKFJ5bkNtvtyI84VdeogC1_erFV3X4zBk7jC09HcwVbvMlOSrO-oqUi';
+var token = 'BQB6YzUWRJ_E1uHSPWTHOrWpM0MJ94Q32--FWmqFG3m1VhrMzYqDAjKxFQXxov-C4xA4Ux-CtEk9vR58ZQD7QLKhu3ISNrbRiOkBXyESpiMu6DKCeKLH_JVEcH_Y3MCFxFALwyfXmKaHEMynVNKjBFdk2_XW7fM4hQu11scjoQVOT9f6_L-O5XEDGF7Qchi12qyx9xz49yQRNRnmYxxxGwFDh0lzdfETSPGNaqQc1vRyxV_SmwpCGPUZNpY8LX9UnZKQ';
 
 serviceModule.factory('artistFactory', ['$resource', 
 	function ($resource) {

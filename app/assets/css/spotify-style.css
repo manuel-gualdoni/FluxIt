@@ -42,11 +42,6 @@ body{
 	font-weight: bold;	
 }
 
-.navbar .navbar-collapse .side-nav:hover{
-	color:red;
-}
-
-
 .navbar .navbar-header img{
 	height: 30px;
 	width: 30px;
@@ -56,15 +51,12 @@ body{
 }
 
 .navbar .collapse{
-
 	font-size: 20px;
-	font
 }
 
 .navbar .collapse .nav .glyphicon, #page-wrapper-tracks .glyphicon{
 	padding-right: 10px;
 }
-
 
 #page-wrapper, #page-wrapper-detail, #page-wrapper-tracks{
 	background: #131212;
@@ -73,19 +65,17 @@ body{
 
 /*template artist-list*/
 
-
-
 #page-wrapper .page-header{
 	border-bottom: none;
 }
 
 /*Bordes de tabla (titulo y contenido)*****************************************************************************************/
 
-#page-wrapper .table thead tr th {
+#page-wrapper .table thead tr th, #page-wrapper-search thead tr th{
     border-bottom: none;
 }
 
-#page-wrapper .table tbody tr td, .table tfoot tr td{
+#page-wrapper .table tbody tr td, .table tfoot tr td, #page-wrapper-search tbody tr td{
     border-top: none;
 }
 
@@ -141,7 +131,7 @@ body{
 	font-weight: bold;
 }
 
-#page-wrapper-detail h2:after {
+#page-wrapper-detail h2:after, #page-wrapper-search h1:after{
     content: "";
     height: 2px;
     background-color: #1db954;
@@ -166,6 +156,12 @@ body{
 	font-weight: bold;
 }
 
+#page-wrapper-search label{
+	color: #fff;
+	font-size: 14px;
+	padding-left: 50px;
+}
+
 #page-wrapper-detail .body a p{
 	padding-bottom: 10px;
 	color: #fff;
@@ -183,14 +179,45 @@ body{
    	font-size: 14px;
 }
 
+/*template artist-modal */
+
 .btn-warning{
     color: #000;
-    background-color: green;
-    border-color: green;
+    background-color:#fff;
+    border-color: #000;
+}
+
+.btn-warning:hover{
+    color: #000;
+    background-color:#1db954;
+    border-color: #1db954;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
-	color:green;
+	color:#1db954;
+}
+
+
+/*template artist-search*/
+
+#page-wrapper-search h1{
+	text-align: center;
+	color: #fff;
+	border-bottom: none; 
+}
+
+
+#page-wrapper-search .has-error .form-control, .has-success .form-control{
+	border: 0px solid;
+	border color:#000;
+}
+
+#page-wrapper-search .center-option{
+	padding-left: 180px;
+}
+
+#page-wrapper-search .table-responsive{
+	color: #fff;
 }
 
 
