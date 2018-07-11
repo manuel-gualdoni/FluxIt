@@ -1,1 +1,1 @@
-angular.module('artistListModule', ['serviceModule']);
+angular.module('artistListModule', ['serviceModule', 'artistModalModule']);

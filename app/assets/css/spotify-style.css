@@ -183,6 +183,16 @@ body{
    	font-size: 14px;
 }
 
+.btn-warning{
+    color: #000;
+    background-color: green;
+    border-color: green;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+	color:green;
+}
+
 
 
 

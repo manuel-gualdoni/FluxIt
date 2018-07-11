@@ -1,0 +1,1 @@
+angular.module('artistModalModule', ['ui.bootstrap', 'serviceModule']);

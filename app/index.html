@@ -8,6 +8,9 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
     <!-- Bootstrap Core CSS -->
 
     <!-- Custom CSS -->
@@ -47,6 +50,11 @@
     <script src="artist-genres/artist-genres.module.js"></script>
     <script src="artist-genres/artist-genres.component.js"></script>
 
+    <script src="artist-modal/artist-modal.module.js"></script>
+    <script src="artist-modal/artist-modal.component.js"></script>
+
+
+
 
   </head>
   <body>
@@ -68,15 +76,17 @@
             </div>
             
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="#!/"><span class="glyphicon glyphicon-user"></span>Artists</a>
-                    </li>
-                    <li class="active">
-                        <a href="#!/search"><span class="glyphicon glyphicon-search"></span>Search</a>
-                    </li>
-                </ul>
+            <div ng-controller="LinkCtrl as $ctrl" class="modal-demo">
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav side-nav">
+                        <li ng-class="{ active: $ctrl.isActive('/') }">
+                            <a href="#!/"><span class="glyphicon glyphicon-user"></span>Artists</a>
+                        </li>
+                        <li ng-class="{ active: $ctrl.isActive('/search') }">
+                            <a href="#!/search"><span class="glyphicon glyphicon-search"></span>Search</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </nav>
